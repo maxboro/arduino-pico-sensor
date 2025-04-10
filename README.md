@@ -6,4 +6,11 @@ Script is reading temperature from analog temperature sensor.
 I used [Wokwi](https://wokwi.com/) to simulate the hardware.
 
 # Example
-![screenshot](./docs/screenshot.png)
+Temp below 0:
+![screenshot_cold](./docs/screenshot_cold.png)
+
+Temp within 0-25:
+![screenshot_mild](./docs/screenshot_mild.png)
+
+Temp >25:
+![screenshot_hot](./docs/screenshot_hot.png)

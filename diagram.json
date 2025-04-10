@@ -10,6 +10,13 @@
       "top": -93.4,
       "left": 37.8,
       "attrs": {}
+    },
+    {
+      "type": "wokwi-rgb-led",
+      "id": "rgb1",
+      "top": -15.2,
+      "left": -133.3,
+      "attrs": { "common": "cathode" }
     }
   ],
   "connections": [
@@ -18,7 +25,11 @@
     [ "pico:GP26", "pico:GP22", "green", [ "h0" ] ],
     [ "pico:GP28", "ntc1:OUT", "green", [ "h0" ] ],
     [ "ntc1:GND", "pico:GND.5", "black", [ "h48", "v230.4" ] ],
-    [ "ntc1:VCC", "pico:3V3", "red", [ "h19.2", "v105.6", "h-115.2" ] ]
+    [ "ntc1:VCC", "pico:3V3", "red", [ "h19.2", "v105.6", "h-115.2" ] ],
+    [ "pico:GND.4", "rgb1:COM", "black", [ "h0" ] ],
+    [ "pico:GP11", "rgb1:B", "green", [ "h0" ] ],
+    [ "pico:GP12", "rgb1:G", "green", [ "h0" ] ],
+    [ "pico:GP13", "rgb1:R", "green", [ "h0" ] ]
   ],
   "dependencies": {}
 }
